@@ -1,0 +1,7 @@
+services:
+  apache:
+    image: ${APACHE_IMAGE_SHA}
+    container_name: apache-container # Define container name
+    ports:
+      - 8080:80
+    restart: unless-stopped
